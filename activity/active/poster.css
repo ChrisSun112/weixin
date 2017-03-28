@@ -1,0 +1,490 @@
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html, body {
+    font-family:微软雅黑, 黑体, 宋体;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+    -webkit-text-size-adjust: none;
+}
+ul li{
+    list-style-type: none;
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+.poster-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/*摇一摇海报样式*/
+.poster-shake-wrapper #shakeLogo,.poster-shake-wrapper #showImg,
+.poster-shake-wrapper #desc-title,.poster-shake-wrapper #desc-content,
+.poster-shake-wrapper #shake-btn{
+    position: absolute;
+}
+.poster-shake-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.poster-shake-wrapper #shakeLogo{
+    top:4.3rem;
+    width:8rem;
+    left: 12rem;
+}
+.poster-shake-wrapper #showImg{
+    top:15.8rem;
+    width:25.4rem;
+    left:3.35rem;
+}
+.poster-shake-wrapper #desc-title{
+    top:23rem;
+    width: 19rem;
+    left: 6.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.poster-shake-wrapper #desc-content{
+    top:31rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    font-family: "黑体", "宋体";
+    color: #fff;
+    box-sizing: border-box;
+    padding:.8rem 0rem 0.8rem 0.8rem;
+    border-radius: .5rem;
+}
+.poster-shake-wrapper #shake-btn{
+    bottom: 0;
+    width:32rem;
+    left: 0;
+}
+
+/*大转盘海报样式*/
+.poster-wheel-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-wheel-wrapper #wheelLogo,.poster-wheel-wrapper #showImg,
+.poster-wheel-wrapper #desc-title,.poster-wheel-wrapper #desc-content,
+.poster-wheel-wrapper #wheel-btn{
+    position: absolute;
+}
+.poster-wheel-wrapper #wheelLogo{
+    top:3.5rem;
+    height: 4.5rem;
+    right: 2rem;
+}
+.poster-wheel-wrapper #showImg{
+    top:6.1rem;
+    width:25.4rem;
+    left:3.3rem;
+}
+.poster-wheel-wrapper #desc-title{
+    top:33rem;
+    width:32rem;
+    text-align: center;
+    color: #e75035;
+    font-size: 1.5rem;
+}
+.poster-wheel-wrapper #desc-content{
+    top:44.8rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #333;
+    text-align: center;
+}
+.poster-wheel-wrapper #wheel-btn{
+    top:37rem;
+    width:30rem;
+    left: 1rem;
+}
+
+/*刮刮奖海报样式*/
+.poster-scratch-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-scratch-wrapper #scratchLogo,.poster-scratch-wrapper #showImg,
+.poster-scratch-wrapper #desc-title,.poster-scratch-wrapper #desc-content,
+.poster-scratch-wrapper #scratch-btn{
+    position: absolute;
+}
+.poster-scratch-wrapper #scratchLogo{
+    top:3.5rem;
+    height: 3.5rem;
+    left: 2rem;
+}
+.poster-scratch-wrapper #showImg{
+    top:3.1rem;
+    width:22.9rem;
+    left:4.55rem;
+}
+/*.poster-scratch-wrapper #desc-title{*/
+    /*top:41.7rem;*/
+    /*width:32rem;*/
+    /*text-align: center;*/
+    /*color: #333;*/
+    /*font-size: 1.5rem;*/
+/*}*/
+.poster-scratch-wrapper #desc-content{
+    top:44rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+}
+.poster-scratch-wrapper #scratch-btn{
+    top:33.5rem;
+    width:22.3rem;
+    left: 4.85rem;
+}
+
+/*流量直领海报样式*/
+.poster-direct-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-direct-wrapper #directLogo,.poster-wheel-wrapper #showImg,
+.poster-direct-wrapper #desc-title,.poster-wheel-wrapper #desc-content,
+.poster-direct-wrapper #wheel-btn{
+    position: absolute;
+}
+.poster-direct-wrapper #directLogo{
+    top:1.1rem;
+    width: 3.8rem;
+    left:14.1rem;
+}
+.poster-direct-wrapper #showImg{
+    top:7.3rem;
+    width:25.4rem;
+    left:3.3rem;
+}
+.poster-direct-wrapper #desc-title{
+    top:23.3rem;
+    width:32rem;
+    text-align: center;
+    color: #741912;
+    font-size: 1.6rem;
+}
+.poster-direct-wrapper #desc-content{
+    top:32rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #ffc428;
+    text-align: center;
+}
+.poster-direct-wrapper #direct-btn{
+    top:42.5rem;
+    width:15.5rem;
+    left: 8.25rem;
+}
+
+/*卡送海报样式*/
+.poster-card-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-card-wrapper #cardLogo,.poster-card-wrapper #showImg,
+.poster-card-wrapper #desc-title,.poster-card-wrapper #desc-content,
+.poster-card-wrapper #card-btn{
+    position: absolute;
+}
+.poster-card-wrapper #cardLogo{
+    top:1.1rem;
+    width: 3.8rem;
+    left:2.5rem;
+}
+.poster-card-wrapper #showImg{
+    top:7.3rem;
+    width:32rem;
+}
+.poster-card-wrapper #desc-title{
+    top:21.3rem;
+    width:16rem;
+    left: 8rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    transform: rotate(-7deg);
+}
+.poster-card-wrapper #desc-content{
+    top:33.5rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+}
+.poster-card-wrapper #card-btn{
+    top:43.5rem;
+    width:15.5rem;
+    left: 8.25rem;
+}
+
+/*流量红包海报样式*/
+.poster-paper-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-paper-wrapper #paperLogo,.poster-paper-wrapper #showImg,
+.poster-paper-wrapper #desc-title,.poster-paper-wrapper #desc-content,
+.poster-paper-wrapper #paper-btn{
+    position: absolute;
+}
+.poster-paper-wrapper #paperLogo{
+    top:2rem;
+    width: 3.8rem;
+    right:2rem;
+}
+.poster-paper-wrapper #showImg{
+    top:4.3rem;
+    width:32rem;
+}
+.poster-paper-wrapper #desc-title{
+    top:39rem;
+    width:32rem;
+    text-align: center;
+    color: #fff100;
+    font-size: 1.6rem;
+}
+.poster-paper-wrapper #desc-content{
+    top:42rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #e09227;
+    text-align: center;
+}
+.poster-paper-wrapper #paper-btn{
+    top:26rem;
+    width:8.8rem;
+    left: 11.6rem;
+}
+
+
+/*分享送海报样式*/
+.poster-share-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-share-wrapper #shareLogo,.poster-share-wrapper #showImg,
+.poster-share-wrapper #desc-title,.poster-share-wrapper #desc-content,
+.poster-share-wrapper #share-btn{
+    position: absolute;
+}
+.poster-share-wrapper #shareLogo{
+    top:2rem;
+    width: 3.8rem;
+    left:2rem;
+}
+.poster-share-wrapper #showImg{
+    top:13.3rem;
+    width:32rem;
+}
+.poster-share-wrapper #desc-title{
+    top:34rem;
+    width:32rem;
+    text-align: center;
+    color: #fff100;
+    font-size: 1.6rem;
+}
+.poster-share-wrapper #desc-content{
+    top:38.5rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+}
+.poster-share-wrapper #share-btn{
+    top: 0.2rem;
+    width: 11.65rem;
+    right: 0.2rem;
+}
+/*新华分享送海报第二套样式*/
+.poster-xinhua-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-xinhua-wrapper #shareLogo,.poster-xinhua-wrapper #showImg,
+.poster-xinhua-wrapper #desc-title,.poster-xinhua-wrapper #desc-content,
+.poster-xinhua-wrapper #share-btn{
+    position: absolute;
+}
+.poster-xinhua-wrapper #shareLogo{
+    top:2rem;
+    width: 3.8rem;
+    left:2rem;
+}
+.poster-xinhua-wrapper #showImg{
+    top:5.5rem;
+    width:25.2rem;
+}
+.poster-xinhua-wrapper #desc-title{
+    top:34rem;
+    width:32rem;
+    text-align: center;
+    color: #fff100;
+    font-size: 1.6rem;
+}
+.poster-xinhua-wrapper #desc-content{
+    top:38.5rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+}
+.poster-xinhua-wrapper #share-btn{
+    top: 0rem;
+    width: 7rem;
+    right: 1rem;
+}
+
+/*签到送海报样式*/
+.poster-sign-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-sign-wrapper #signLogo,.poster-sign-wrapper #showImg,
+.poster-sign-wrapper #desc-title,.poster-sign-wrapper #desc-content,
+.poster-sign-wrapper #sign-btn{
+    position: absolute;
+}
+.poster-sign-wrapper #signLogo{
+    top:2rem;
+    width: 3.8rem;
+    left:2rem;
+}
+.poster-sign-wrapper #showImg{
+    top:4rem;
+    width:32rem;
+}
+.poster-sign-wrapper #desc-title{
+    top:34rem;
+    width:32rem;
+    text-align: center;
+    color: #000;
+    font-size: 1.6rem;
+    font-family: 黑体, 宋体;
+    font-weight: bold;
+}
+.poster-sign-wrapper #desc-content{
+    top:37rem;
+    width:25.4rem;
+    left: 3.75rem;
+    font-size: 1.4rem;
+    color: #000;
+    text-align: center;
+}
+.poster-sign-wrapper #sign-btn{
+    width: 7.6rem;
+    left: 12.2rem;
+    bottom: 1rem;
+}
+
+/*注册送海报样式*/
+.poster-register-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    font-family: "黑体", "宋体";
+}
+.poster-register-wrapper #registerLogo,.poster-register-wrapper #showImg,
+.poster-register-wrapper #desc-title,.poster-register-wrapper #desc-content,
+.poster-register-wrapper #register-btn{
+    position: absolute;
+}
+.poster-register-wrapper #registerLogo{
+    top:2rem;
+    width: 3.8rem;
+    left:2rem;
+}
+.poster-register-wrapper #showImg{
+    top:4rem;
+    width:32rem;
+    z-index: 2;
+}
+.poster-register-wrapper #desc-title{
+    top:32.5rem;
+    width:25rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 黑体, 宋体;
+    font-weight: bold;
+    left: 3.5rem;
+    /*background-image: url("/img/activity/register/orange-poster-word-bg.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    padding-top: 1rem;
+}
+.poster-register-wrapper #desc-content{
+    top:37rem;
+    width:25rem;
+    font-size: 1.4rem;
+    color: #ffe147;
+    text-align: center;
+    left: 3.5rem;
+    /*background-image: url("/img/activity/register/orange-poster-word-bg.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    padding-top: 1rem;
+}
+.poster-register-wrapper #register-btn{
+    width: 13rem;
+    height: 6rem;
+    left: 9.5rem;
+    bottom: 0.5rem;
+}
+.poster-register-wrapper #contentWrap{
+    width: 27rem;
+    height: 15rem;
+    position: absolute;
+    box-sizing: border-box;
+    border:solid 10px #FFE147;
+    top:29rem;
+    left: 2.5rem;
+}
